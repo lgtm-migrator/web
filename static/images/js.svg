@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   width="165.00391"
+   height="37.402344"
+   viewBox="0 0 45.069784 9.8960367"
+   version="1.1"
+   id="svg8">
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient5115">
+      <stop
+         id="stop5111"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:1" />
+      <stop
+         id="stop5113"
+         offset="1"
+         style="stop-color:#000000;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
+       y2="-0.67578083"
+       x2="43.269646"
+       y1="11.07517"
+       x1="-5.7379131"
+       id="linearGradient5117"
+       xlink:href="#linearGradient5115" />
+  </defs>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(5.8046488,-1.1168063)"
+     id="layer1">
+    <text
+       id="text4547"
+       y="8.5272064"
+       x="-4.5024028"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:url(#linearGradient5117);fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         id="tspan4549"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:-apple-system, BlinkMacSystemFont;-inkscape-font-specification:'Segoe UI Light';fill:url(#linearGradient5117);fill-opacity:1;stroke-width:0.26458332"
+         y="8.5272064"
+         x="-4.5024028">javascript</tspan></text>
+  </g>
+</svg>

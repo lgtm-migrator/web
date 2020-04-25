@@ -1,0 +1,30 @@
+@import '../variables/colors.styl'
+  _LAYOUT_WIDTH = 900px
+  .page
+    font-family 'Roboto', sans-serif
+    font-weight 200
+    letter-spacing 1px
+    background-attachment fixed
+    text-align left
+    font-size  14px
+    line-height 1.5
+    min-height 100vh
+    min-width 100%
+    cursor default
+    &--color
+      &-white
+        background #ffffff
+        color #000000
+      &-black
+        background #000000
+        color: lighten($color.grey, 5)
+  .layout
+      width _LAYOUT_WIDTH
+      min-height: 100vh
+      margin 0 auto
+      display grid
+      grid-template-columns 1fr
+      grid-template-rows auto 1fr auto
+      grid-template-areas "header" "content"
+  .content
+    grid-area content
