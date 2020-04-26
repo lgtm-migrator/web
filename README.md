@@ -1,4 +1,4 @@
-# alexander-web
+# Web Card app
 
 > Nuxt.js project
 
