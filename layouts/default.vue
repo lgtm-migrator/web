@@ -1,7 +1,7 @@
 <template lang="pug">
   .page
     .page__cover: video(autoplay bufereded playsinline loop muted).page__cover-video: source(src="cover.mp4")
-    .layout
+    .page__viewport: .layout
       v-header
       .content
         .content__viewport: nuxt

@@ -14,7 +14,9 @@
     min-width 100%
     cursor default
     color: lighten($color.grey, 5)
-
+    &__viewport
+      display flex
+      justify-content center
     &__cover
       position fixed
       top 0
@@ -28,7 +30,7 @@
   .layout
       position relative
       z-index 99999
-      width var(--layout-width)
+      width minmax(300px, 900px)
       min-height: 100vh
       display grid
       grid-template-columns 1fr
