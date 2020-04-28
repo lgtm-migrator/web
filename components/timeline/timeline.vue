@@ -31,6 +31,8 @@
         z-index 99
         width 100px
         height 100%
+        @media screen and (max-width: 440px)
+          display none
       &:before
         left 0
         background-image linear-gradient(90deg, black, transparent)
