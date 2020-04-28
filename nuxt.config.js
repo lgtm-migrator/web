@@ -24,6 +24,9 @@ module.exports = {
     color: '#5CE6CD',
     height: '3px'
   },
+  plugins: [
+    '~plugins/gtag-loader'
+  ],
   /*
   ** Build configuration
   */
