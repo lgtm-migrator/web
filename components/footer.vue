@@ -1,6 +1,7 @@
 <template lang="pug">
   footer.footer © Alexander Katkov | VK_#[a(href="//vk.com/7architect" target="_blank").link 7Architect]
 </template>
+
 <style lang="stylus">
   @import '../assets/stylus/variables/colors.styl'
   .footer
