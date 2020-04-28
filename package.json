@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "nuxt": "^2.0.0",
+    "vue-gtag": "^1.6.2",
     "vuescroll": "^4.15.0"
   },
   "devDependencies": {
