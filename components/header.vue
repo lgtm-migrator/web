@@ -8,6 +8,7 @@
       div(:class="common.header__section"): div(:class="common.header__nav"): nav
         // a(href="//vk.com/7architect").link VK
 </template>
+
 <style lang="stylus" module="common">
   @import '../assets/stylus/variables/colors.styl'
   .header
@@ -15,7 +16,7 @@
     grid-area header
     padding-top 2.5rem
     &__logo
-      width 46px
+      width 70px
     &__section
       width 100%
       display flex

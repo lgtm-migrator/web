@@ -1,8 +1,11 @@
 <template lang="pug">
-  .page.page--color-black: .layout
-    v-header
-    .content: nuxt
-    v-footer
+  .page
+    .page__cover: video(autoplay bufereded playsinline loop muted).page__cover-video: source(src="cover.mp4")
+    .page__viewport: .layout
+      v-header
+      .content
+        .content__viewport: nuxt
+      v-footer
 </template>
 <style lang="stylus">
   @import '../assets/stylus/layout/default.styl'

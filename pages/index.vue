@@ -8,7 +8,31 @@ main
       .title--level-2 frontend developer
     .stack__item: .title--level-2
       | and musician
+
+  timeline
+    timeline-event
+    timeline-event
+    timeline-event
+    timeline-event
+    timeline-event
+    timeline-event
+    timeline-event
 </template>
+
+<script>
+  import Scroll from 'vuescroll';
+  import Timeline from '~/components/timeline/timeline'
+  import TimelineEvent from '~/components/timeline/timeline-event'
+
+  export default {
+    components: {
+      Scroll,
+      Timeline,
+      TimelineEvent
+    }
+  }
+</script>
+
 <style lang="stylus">
   @import '../assets/stylus/variables/colors.styl'
   .present
