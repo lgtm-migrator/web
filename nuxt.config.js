@@ -25,7 +25,8 @@ module.exports = {
     height: '3px'
   },
   plugins: [
-    '~plugins/gtag-loader'
+    '~plugins/gtag-loader',
+    '~plugins/vuescroll-loader'
   ],
   /*
   ** Build configuration
