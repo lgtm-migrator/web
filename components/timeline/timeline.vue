@@ -1,24 +1,43 @@
 <template lang="pug">
   .timeline
     .timeline__shadow
-    .timeline__scroll-area: slot
+    .timeline__scroll: v-scroll(:ops="ops"): .timeline__events: slot
 </template>
+
+<script>
+  export default {
+    mounted() {
+      console.log(this.$styleColors);
+    },
+    data() {
+      return {
+        ops: {
+          bar: {
+            onlyShowBarOnScroll: false,
+            background: this.$styleColors.$COLOR_PRIMARY
+          }
+        }
+      }
+    }
+  }
+</script>
 
 <style lang="stylus">
   .timeline
+    margin-top 4rem
     position relative
-
-    &__scroll-area
+    &__scroll
+      width 100vw
+    &__events
       --event-width: 300px
 
-      width 100vw
-      overflow-x auto
+      padding-bottom 1rem
+      width auto
       display flex
-      margin-top 3rem
 
       &:before
         content ""
-        width calc(50% - var(--event-width) / 2)
+        width calc(50vw - var(--event-width) / 2)
         flex 0 0 auto
 
     &__shadow
