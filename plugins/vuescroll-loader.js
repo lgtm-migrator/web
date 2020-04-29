@@ -6,7 +6,8 @@ Vue.use(vuescroll, {
   ops: {
     mode: 'native',
     sizeStrategy: 'percent',
-    detectResize: true
+    detectResize: true,
+    specifyBorderRadius: 0
   },
   name: 'v-scroll' // customize component name, default -> vueScroll
 })

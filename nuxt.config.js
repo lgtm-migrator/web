@@ -26,7 +26,8 @@ module.exports = {
   },
   plugins: [
     '~plugins/gtag-loader',
-    '~plugins/vuescroll-loader'
+    '~plugins/vuescroll-loader',
+    '~plugins/stylus-variables-loader'
   ],
   /*
   ** Build configuration

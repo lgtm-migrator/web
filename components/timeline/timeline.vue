@@ -6,13 +6,17 @@
 
 <script>
   export default {
+    mounted() {
+      console.log(this.$styleColors);
+    },
     data() {
       return {
         ops: {
-          mode: 'slide',
-          sizeStrategy: 'percent',
-          detectResize: true
-        },
+          bar: {
+            onlyShowBarOnScroll: false,
+            background: this.$styleColors.$COLOR_PRIMARY
+          }
+        }
       }
     }
   }
@@ -27,6 +31,7 @@
     &__events
       --event-width: 300px
 
+      padding-bottom 1rem
       width auto
       display flex
 
