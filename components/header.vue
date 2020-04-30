@@ -21,6 +21,7 @@
     &__nav
       display flex
       justify-content center
+      align-items center
       margin-top 1rem
       &-link
         display inline-block

@@ -2,11 +2,9 @@
 main
   .stack
     .stack__item
-      h1.title.title--size-xlarge.title--weight-normal.title--align-center
-        | Alexander Katkov
-      .title--level-2 frontend developer
-    .stack__item: .title--level-2
-      | and musician
+      h1.title.title--size-xlarge.title--weight-normal.title--align-center Alexander Katkov
+      .title.title--level-2 frontend developer, musician
+    .stack__item: .container: nuxt-link(to="/contact").button contact
 
   timeline(:timeline="$store.state.timeline")
 </template>
