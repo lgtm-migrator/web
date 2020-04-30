@@ -9,18 +9,12 @@ main
     .stack__item: .title--level-2
       | and musician
 
-  timeline
-    timeline-event
-    timeline-event
-    timeline-event
-    timeline-event
-    timeline-event
-    timeline-event
-    timeline-event
+  timeline(:timeline="$store.state.timeline")
 </template>
 
 <script>
-  import Scroll from 'vuescroll';
+  import { mapActions, mapGetters } from 'vuex'
+  import Scroll from 'vuescroll'
   import Timeline from '~/components/timeline/timeline'
   import TimelineEvent from '~/components/timeline/timeline-event'
 
@@ -29,12 +23,40 @@ main
       Scroll,
       Timeline,
       TimelineEvent
-    }
+    },
+
+    data() {
+      return { interval: null }
+    },
+
+    computed: {
+      ...mapGetters([
+        'timeline'
+      ])
+    },
+    methods: {
+      ...mapActions([
+        'loadTimeline'
+      ]),
+      load() {
+        this.loadTimeline()
+      }
+    },
+    beforeDestroy() {
+      clearInterval(this.interval)
+    },
+    fetch() {
+      this.load()
+
+      this.interval = setInterval(this.load, 5000)
+    },
+    fetchOnServer: false
   }
 </script>
 
 <style lang="stylus">
   @import '../assets/stylus/variables/colors.styl'
+
   .present
     width 500px
     margin 0 auto

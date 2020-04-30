@@ -1,22 +1,37 @@
 <template lang="pug">
   .timeline
     .timeline__shadow
-    .timeline__scroll: v-scroll(:ops="ops"): .timeline__events: slot
+    .timeline__scroll: v-scroll(:ops="ops")
+      .timeline__events: timeline-event(
+        class="list-complete-item"
+        v-for="(event, index) in timeline"
+        :key="event.date + Math.random()"
+        :date="event.date"
+        :title="event.title"
+        :desc="event.event"
+      )
 </template>
 
 <script>
+  import TimelineEvent from './timeline-event'
   export default {
-    mounted() {
-      console.log(this.$styleColors);
+    components: {
+      TimelineEvent
     },
     data() {
       return {
         ops: {
           bar: {
-            onlyShowBarOnScroll: false,
+            onlyShowBarOnScroll: true,
             background: this.$styleColors.$COLOR_PRIMARY
           }
         }
+      }
+    },
+    props: {
+      timeline: {
+        type: Array,
+        required: true
       }
     }
   }

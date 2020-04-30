@@ -2,16 +2,45 @@
   .timeline__event
     .timeline__event-point-line
       div: .timeline__event-point
-      .timeline__event-date 20 april 2020
+      .timeline__event-date {{ date }}
       .timeline__event-line
     .timeline__event-header
-      .timeline__event-title Start of timeline
-    .timeline__event-content
-      | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu imperdiet ante, et rhoncus felis. Quisque efficitur magna quis elit porttitor cursus. Nullam blandit elit dictum lorem tempor eleifend sit amet a lorem. Ut nulla massa, sodales ac quam in, sagittis interdum ipsum.
+      .timeline__event-title {{ title }}
+    .timeline__event-content {{ desc }}
 </template>
+
+<script>
+  export default {
+    props: {
+      date: {
+        type: String,
+        required: true
+      },
+      title: {
+        type: String,
+        required: true
+      },
+      desc: {
+        type: String,
+        required: true
+      },
+    }
+  }
+</script>
 
 <style lang="stylus">
   @import '../../assets/stylus/variables/colors.styl'
+
+  .list-complete-item
+    transition: all 1s
+    display: inline-block
+    margin-right: 10px
+  .list-complete-enter, .list-complete-leave-to
+  /* .list-complete-leave-active до версии 2.1.8 */
+    opacity 0
+    transform translateY(30px)
+  .list-complete-leave-active
+    position absolute
 
   @media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm)
     .timeline__event-line
