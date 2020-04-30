@@ -31,17 +31,6 @@
 <style lang="stylus">
   @import '../../assets/stylus/variables/colors.styl'
 
-  .list-complete-item
-    transition: all 1s
-    display: inline-block
-    margin-right: 10px
-  .list-complete-enter, .list-complete-leave-to
-  /* .list-complete-leave-active до версии 2.1.8 */
-    opacity 0
-    transform translateY(30px)
-  .list-complete-leave-active
-    position absolute
-
   @media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm)
     .timeline__event-line
       background linear-gradient(90deg, transparent 0%, #999 0%, transparent 100%) !important

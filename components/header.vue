@@ -1,74 +1,58 @@
 <template lang="pug">
-  header(:class="common.header")
-      nav(:class="[common.header__section, common['header__section--content-right']]")
-        div(:class="common.header__nav")
-          // a(href="//vk.com/7architect").link VK
-      nav(:class="[common.header__section, common['header__section--content-center']]")
-        nuxt-link(to="/").link: img(src="/images/logo.jpg" :class="common.header__logo")
-      div(:class="common.header__section"): div(:class="common.header__nav"): nav
-        // a(href="//vk.com/7architect").link VK
+  header.header: .container
+    .header__logo: nuxt-link(to="/"): img(src="/images/logo.jpg").header__logo-image
+    nav.header__nav
+      a(target="_blank" href="//vk.com/7architect").header__nav-link VKontakte
+      a(target="_blank" href="//github.com/7architect").header__nav-link GitHub
+      a(target="_blank" href="//codepen.io/7architect").header__nav-link CodePen
+    .header__delimiter
 </template>
 
-<style lang="stylus" module="common">
+<style lang="stylus">
   @import '../assets/stylus/variables/colors.styl'
   .header
-    display flex
     grid-area header
     padding-top 2.5rem
     &__logo
-      width 70px
-    &__section
-      width 100%
       display flex
-      align-items center
-      &--content-center
-        justify-content center
-        width fit-content
-        padding 0 2rem
-      &--content-right
-        justify-content flex-end
+      justify-content center
+      &-image
+        width 70px
     &__nav
+      display flex
+      justify-content center
+      margin-top 1rem
       &-link
-        font-size .95em
-        letter-spacing 1px
-        color: $color.grey
         display inline-block
-        text-transform uppercase
-        margin 0 .5rem
+        color: $color.grey
+        background-image -webkit-linear-gradient($color.grey, lightness($color.grey, 1%))
+        -webkit-background-clip text
+        -webkit-text-fill-color transparent
+        -webkit-font-smoothing antialiased
         text-decoration none
-        transition color .2s linear
+        font-weight 400
+        font-size 1rem
+        transition-property color, background, border-color
+        transition .3s ease
+        &:not(:last-of-type)
+          margin-right 1rem
         &:hover
-        &--active
-          text-decoration none
           color: $color.white
-</style>
-<style lang="stylus" module="white">
-  @import '../assets/stylus/variables/colors.styl'
-  .header
-    &__nav
-      &-link
-        font-size .95em
-        letter-spacing 1px
-        color: $color.grey
-        display inline-block
-        text-transform uppercase
-        margin 0 .5rem
-        text-decoration none
-        transition color .2s linear
-        &--active
-        &:hover
-          color #000000
+          -webkit-text-fill-color: initial
+          border-color: $color.white
+
+    &__delimiter
+      background: linear-gradient(90deg, transparent -20%, $color.grey, transparent 120%)
+      width 100%
+      height 1px
+      margin-top .5rem
+      margin-bottom 1.5rem
+      border-radius 100%
+      @media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm)
+          background linear-gradient(90deg, transparent 0%, $color.grey, transparent 100%)
 </style>
 <script>
   export default {
-    name: "v-header",
-    props: {
-      theme: { type: String, validate: v => ['common', 'white'].includes(v) }
-    },
-    computed: {
-      style () {
-        return this.theme ? this[this.theme] : this.common
-      }
-    }
+    name: "v-header"
   }
 </script>

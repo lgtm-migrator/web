@@ -1,6 +1,5 @@
 <template lang="pug">
 main
-  .delimiter.delimiter--margin-xxlarge
   .stack
     .stack__item
       h1.title.title--size-xlarge.title--weight-normal.title--align-center
