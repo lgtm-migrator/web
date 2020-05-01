@@ -65,16 +65,16 @@
   padding 0 1.5rem
 
 
-.button
+.button2
   background linear-gradient(45deg, /*#3b9de3 0%,*/ #7a57e6 15%, #9844b7 45%, #ff357f 100%)
   font-family inherit
   font-weight 300
-  font-size .9em
+  font-size 1em
   letter-spacing 1px
   color #FFFFFF
   outline none
   box-shadow 0px 3px 5px 0px rgba(0, 0, 0, .3)
-  padding .4em 1.7em
+  padding .5em 1.5em
   position relative
   overflow visible
   cursor pointer
@@ -101,7 +101,7 @@
     z-index -1
   &:hover
     transform translateY(-2px)
-    box-shadow 0px 3px 3px 0px rgba(0, 0, 0, .7)
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, .7)
     &::before
       top 1px
       opacity .7
@@ -115,6 +115,10 @@
       opacity: .5
 
   &__type
+    &-metal
+      background-image url('/images/metal.jpg')
+      background-size cover
+      background-position center
     &-cancel
       background linear-gradient(45deg, #4a3b54 5%, #444e69 50%, #3b4982 100%)
       &::before

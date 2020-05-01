@@ -4,7 +4,10 @@ main
     .stack__item
       h1.title.title--size-xlarge.title--weight-normal.title--align-center Alexander Katkov
       .title.title--level-2 frontend developer, musician
-    .stack__item: .container: nuxt-link(to="/contact").button contact
+    .stack__item: .container Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus quam, viverra quis arcu a, laoreet dignissim quam. Donec tincidunt ante vitae fermentum pharetra. Curabitur ultrices, velit eget semper volutpat, massa arcu congue arcu, vel pharetra ex nisl at justo. Mauris egestas malesuada ex, non egestas ante vulputate rhoncus. Maecenas mollis pellentesque lacinia. Nullam mattis ultrices felis. Curabitur feugiat aliquam convallis. Integer ultrices libero sem, vitae blandit nulla vestibulum vel. Quisque pharetra iaculis lorem et molestie. Integer in rhoncus eros, a tempor mi.
+
+
+    .stack__item: .container: nuxt-link(to="/contact"): v-button contact me via ...
 
   timeline(:timeline="$store.state.timeline")
 </template>
@@ -12,12 +15,14 @@ main
 <script>
   import { mapActions, mapGetters } from 'vuex'
   import Scroll from 'vuescroll'
+  import VButton from '~/components/button/button'
   import Timeline from '~/components/timeline/timeline'
   import TimelineEvent from '~/components/timeline/timeline-event'
 
   export default {
     components: {
       Scroll,
+      VButton,
       Timeline,
       TimelineEvent
     },
