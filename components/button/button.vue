@@ -38,13 +38,11 @@
       transition all .2s linear
       z-index -1
     &--hover
-      &:hover
-        transform translateY(-2px)
-        box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, .7)
-        &::before
-          top 1px
-          opacity .6
-          cursor pointer
+      box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, .7)
+      &::before
+        top 1px
+        opacity .6
+        cursor pointer
     &__layer
       &-gradient
         position relative

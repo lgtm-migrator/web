@@ -44,13 +44,14 @@ main
         this.loadTimeline()
       }
     },
+    mounted() {
+      this.interval = setInterval(this.load, 5000)
+    },
     beforeDestroy() {
       clearInterval(this.interval)
     },
-    fetch() {
-      this.load()
-
-      this.interval = setInterval(this.load, 5000)
+    async middleware({ store }) {
+      await store.dispatch('loadTimeline')
     }
   }
 </script>

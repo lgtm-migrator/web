@@ -1,6 +1,6 @@
 <template lang="pug">
   header.header: .container
-    .header__logo: nuxt-link(to="/"): img(src="/images/logo.jpg").header__logo-image
+    .header__logo: nuxt-link(to="/"): img(:src="_logo").header__logo-image
     nav.header__nav
       a(target="_blank" href="//vk.com/7architect").header__nav-link VKontakte
       a(target="_blank" href="//github.com/7architect").header__nav-link GitHub
@@ -53,7 +53,13 @@
           background linear-gradient(90deg, transparent 0%, $color.grey, transparent 100%)
 </style>
 <script>
+  import { mapGetters } from 'vuex'
+
   export default {
-    name: "v-header"
+    name: "v-header",
+
+    computed: {
+      ...mapGetters(['_logo'])
+    }
   }
 </script>
