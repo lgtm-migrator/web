@@ -8,7 +8,8 @@ module.exports = {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Timeline | Alexander Katkov' },
-      { name: 'yandex-verification', content: '4d326bd5bf7a7a00' }
+      { name: 'yandex-verification', content: '4d326bd5bf7a7a00' },
+      { name: 'google-site-verification', content: 'deCx-bcP03tQEi9Fym7RzIYsdvZkBMZC77yhPfZdjMg' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
