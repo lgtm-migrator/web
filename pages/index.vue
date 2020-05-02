@@ -51,8 +51,7 @@ main
       this.load()
 
       this.interval = setInterval(this.load, 5000)
-    },
-    fetchOnServer: false
+    }
   }
 </script>
 
