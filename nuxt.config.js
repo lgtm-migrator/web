@@ -1,5 +1,3 @@
-import { yndxmetrica } from './config'
-
 module.exports = {
   /*
   ** Headers of the page
@@ -32,12 +30,6 @@ module.exports = {
     '~plugins/gtag-loader',
     '~plugins/vuescroll-loader',
     '~plugins/stylus-variables-loader'
-  ],
-  modules: [
-    [
-      '@nuxtjs/yandex-metrika',
-      yndxmetrica
-    ]
   ],
   /*
   ** Build configuration

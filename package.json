@@ -13,7 +13,6 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "@nuxtjs/yandex-metrika": "^1.0.3",
     "contentful": "^7.14.4",
     "install": "^0.13.0",
     "npm": "^6.14.4",
