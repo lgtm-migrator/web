@@ -13,8 +13,8 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "@nuxtjs/google-adsense": "^1.1.3",
-    "@nuxtjs/yandex-metrika": "^1.3.0",
+    "@nuxtjs/google-adsense": "1.1.3",
+    "@nuxtjs/yandex-metrika": "1.3.0",
     "contentful": "7.15.0",
     "install": "0.13.0",
     "npm": "6.14.6",
