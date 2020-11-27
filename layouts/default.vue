@@ -5,6 +5,7 @@
       v-header
       .content
         .content__viewport: nuxt
+        .content__ad: adsbygoogle
       v-footer
 </template>
 <style lang="stylus">

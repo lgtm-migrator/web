@@ -31,6 +31,14 @@ module.exports = {
     '~plugins/vuescroll-loader',
     '~plugins/stylus-variables-loader'
   ],
+
+  modules: [
+    // Simple usage
+    ['@nuxtjs/google-adsense', {
+      id: 'ca-pub-5385246767562867',
+      test: true,
+    }]
+  ],
   /*
   ** Build configuration
   */
