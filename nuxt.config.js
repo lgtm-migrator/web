@@ -39,8 +39,8 @@ module.exports = {
         id: 'ca-pub-5385246767562867',
       }
     ],
-    '@nuxtjs/yandex-metrika',
-      {
+    [
+      '@nuxtjs/yandex-metrika', {
         id: '62419633',
         webvisor: true,
         // clickmap:true,
@@ -48,6 +48,7 @@ module.exports = {
         // trackLinks:true,
         // accurateTrackBounce:true,
       }
+    ]
   ],
   /*
   ** Build configuration
