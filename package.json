@@ -28,7 +28,7 @@
     "babel-eslint": "10.1.0",
     "eslint": "4.19.1",
     "eslint-friendly-formatter": "4.0.1",
-    "eslint-loader": "2.2.1",
+    "eslint-loader": "4.0.2",
     "eslint-plugin-vue": "4.7.1",
     "pug": "2.0.4",
     "pug-loader": "2.4.0",
