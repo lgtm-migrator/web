@@ -21,7 +21,7 @@
     "nuxt": "2.14.7",
     "nuxt-env": "0.1.0",
     "stylus-2js-variable-loader": "1.0.0",
-    "vue-gtag": "1.6.2",
+    "vue-gtag": "1.10.0",
     "vuescroll": "4.15.0"
   },
   "devDependencies": {
