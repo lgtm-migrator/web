@@ -30,7 +30,7 @@
     "eslint-friendly-formatter": "4.0.1",
     "eslint-loader": "4.0.2",
     "eslint-plugin-vue": "7.1.0",
-    "pug": "2.0.4",
+    "pug": "3.0.0",
     "pug-loader": "2.4.0",
     "pug-plain-loader": "1.0.0",
     "stylus": "0.54.8",
