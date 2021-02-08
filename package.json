@@ -22,7 +22,7 @@
     "nuxt-env": "0.1.0",
     "stylus-2js-variable-loader": "1.0.0",
     "vue-gtag": "1.10.0",
-    "vuescroll": "4.17.2"
+    "vuescroll": "4.17.3"
   },
   "devDependencies": {
     "babel-eslint": "10.1.0",
